@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container form input {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.container form button {
+    margin: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 5ms;
+}
+
+.container form button:hover {
+    scale: 1.01;
+    background-color:antiquewhite;
+    cursor: pointer;
+}
+
+.container-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

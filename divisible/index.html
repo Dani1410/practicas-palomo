@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verificar Divisibilidad por 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Verificar Divisibilidad por 3</h2>
+      <form
+        action="divisibility.php"
+        method="POST"
+        onsubmit="return validateForm(event)"
+      >
+        <div class="form-group">
+          <label for="count">Ingrese la cantidad de veces:</label>
+          <input type="number" id="count" name="count" required />
+          <span id="countError" class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <button type="button" onclick="generateInputFields()">
+            Generar campos
+          </button>
+        </div>
+        <div id="inputFieldsContainer"></div>
+        <div
+          class="form-group"
+          id="verifyButtonContainer"
+          style="display: none"
+        >
+          <button type="submit" id="verifyButton">Verificar</button>
+        </div>
+        <span id="verificationError" class="error-message"></span>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

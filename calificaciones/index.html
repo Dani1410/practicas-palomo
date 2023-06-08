@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calificaciones</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Calificaciones</h1>
+
+      <form id="calificaciones-form">
+        <label for="cantidad">Cantidad de calificaciones:</label>
+        <input type="number" id="cantidad" name="cantidad" required />
+        <button type="button" onclick="generarCampos()">Generar Campos</button>
+
+        <div id="calificaciones-container"></div>
+
+        <button type="button" onclick="calcularPromedio()">
+          Calcular Promedio
+        </button>
+      </form>
+
+      <div id="resultado-container"></div>
+
+      <div id="popup-container">
+        <div id="popup-content">
+          <div id="message-container"></div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
